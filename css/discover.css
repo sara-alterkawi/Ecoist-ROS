@@ -7,11 +7,6 @@
     scroll-behavior: unset;
 
 }
-.logo {
-    font-family: 'vixar';
-    font-size : 50px;
-   font-weight: bold;
-}
 .default-header {
     position: absolute;
     top: 0;

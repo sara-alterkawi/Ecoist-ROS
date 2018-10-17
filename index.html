@@ -8,7 +8,9 @@
 	<title>Ecoist</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+
 	<link rel="stylesheet" href="css/index-style.css">
 </head>
 
@@ -39,10 +41,30 @@
 						<li class="nav-item">
 							<a class="nav-link" href="faq.html">FAQ</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="media.html">Media</a>
+						</li>
 					</ul>
 				</div>
 			</nav>
 		</header>
+	</section>
+	<!--popUp-->
+	<section class="popUpContainer hidden row-center">
+		<div class="backdrop" onclick="hidePopUp()"></div>
+		<div class="popUp">
+			<div class="cross" onclick="hidePopUp()">
+				<svg width="20" height="20" fill="rgba(255,255,255,0.4)" version="1" xmlns="sara.omar.alterkawi@gmail.com" viewBox="0 0 22 22">
+					<path d="M14 11l8-8V2c0-1 0 0 0 0l-2-2h-1l-8 8-8-8H2C1 0 2 0 2 0L0 2v1l8 8-8 8v1c0 1 0 0 0 0l2 2h1l8-8 8 8h1l2-2v-1l-8-8z" />
+				</svg>
+			</div>
+			<h4 class="logo">Ecoist</h4>
+			<p>Subscribe to get latest news!</p>
+			<form class="row-center subscribeForm">
+				<input type="email" placeholder="Enter your email address" required>
+				<button class="btn btn-custom btn-lg">Subscribe</button>
+			</form>
+		</div>
 	</section>
 	<!-- Main Area -->
 	<section>
@@ -51,7 +73,8 @@
 				<div class="row fullscreen justify-content-center align-items-center">
 					<div class="col-md-10 col-12">
 						<div class="banner-content text-center">
-							<h4 class="text-white mb-20 ">Be Ecoist! for you! and for your planet!</h4>
+							<h4 class="text-white mb-20 "><i class="fas fa-leaf fa-flip-horizontal"></i>Be Ecoist! for you! and for your
+								planet!<i class="fas fa-leaf"></i></h4>
 							<a href="discover.html" class="text-uppercase header-btn">Discover Now</a>
 						</div>
 					</div>
@@ -66,13 +89,13 @@
 		<div class="container text-center social"">
 				<ul>
 					<li><a href=" https://www.facebook.com/Ecoistvehicle/"> <i
-		 class="fa fa-facebook"></i></a></li>
-			<li><a href="https://www.instagram.com/ecoistvehicle/"><i class="fa fa-instagram"></i></a></li>
+		 class="fab fa-facebook"></i></a></li>
+			<li><a href="https://www.instagram.com/ecoistvehicle/"><i class="fab fa-instagram"></i></a></li>
 			</ul>
 			<p>&copy; Ecoist. All rights reserved. Designed by ROS</a></p>
 		</div>
 	</footer>
-
+	<!--java file-->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	 crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>

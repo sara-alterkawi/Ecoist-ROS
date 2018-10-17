@@ -10,9 +10,9 @@ body {
 }
 /*Navbar CSS*/
 .logo {
-    font-family: 'vixar';
-    font-size : 50px;
-   font-weight: bold;
+  font-family: 'vixar';
+  font-size : 50px;
+ font-weight: bold;
 }
 .default-header {
   position: absolute;
@@ -30,6 +30,12 @@ body {
   padding: 20px;
 }
 /*Main Area CSS*/
+i {
+	font-size: 26px;
+	padding: 4px;
+	color: #008001;
+	transition: all 0.3s;
+}
 .header-btn {
   background-color: #008001;
   padding: 8px 40px;
@@ -58,16 +64,99 @@ body {
 	display: inline-block;
 	margin: 0 20px;
 }
-#footer .social i.fa {
+#footer .social i {
 	font-size: 26px;
 	padding: 4px;
 	color: #008001;
 	transition: all 0.3s;
 }
-#footer .social i.fa:hover {
+#footer .social i:hover {
 	color: #eee;
 }
 #footer p {
   font-size: 15px;
   color: #777777;
+}
+/*Newsletter form*/
+.row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.popUpContainer {
+  position: fixed;
+  z-index: 100;
+}
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: #777777;
+  opacity: 0.5;
+  z-index: 1;
+  transition: 0.5s ease-out;
+}
+.popUpContainer.hidden {
+  pointer-events: none;
+}
+.popUpContainer.hidden .backdrop {
+  opacity: 0;
+}
+.popUp {
+  border-radius: 4px;
+  background-color: #264325;
+  width: 50vw;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 26px 20px;
+  position: fixed;
+  z-index: 3;
+  transition: opacity 0.4s ease-out, transform 0.5s ease-in-out;
+}
+.popUpContainer.hidden .popUp {
+  opacity: 0;
+  transform: scale(0.5);
+}
+.cross {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px;
+}
+.popUp h4 {
+  margin: 0;
+  padding: 6px;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+}
+.popUp p {
+  margin: 0;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+.popUp form {
+  padding: 14px 30px;
+}
+.popUp input {
+  margin: 10px;
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  outline: none;
+  border: 0;
+  flex: 1;
+}
+.popUp button {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 4px;
+  color: #647332;
+  outline: none;
+  border: 0;
+}
+input[type=submit]:hover {
+  opacity: 0.8;
 }

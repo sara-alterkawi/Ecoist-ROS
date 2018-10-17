@@ -26,17 +26,17 @@
   .navbar-nav a {
 	text-transform: uppercase;
 	font-weight: bold;
-	  color:#008001;
+	color:#008001;
 	padding: 20px;
   }
 /* Team Section */
 #team {
-	background: #008001 url(../img/team-bg.jpg) center top no-repeat;
+	background: #008001 url(../img/team-bg1.jpg) center top no-repeat;
 	background-size: cover;
 }
 #team .overlay {
 	padding: 120px 0;
-	background: rgba(150, 176, 68, 0.9);
+	background: rgba(151, 176, 68, 0.658);
 }
 #team h2, #team p {
 	color: #333;
@@ -84,16 +84,36 @@ hr {
 	display: inline-block;
 	margin: 0 20px;
 }
-#footer .social i.fa {
+#footer .social i {
 	font-size: 26px;
 	padding: 4px;
 	color: #008001;
 	transition: all 0.3s;
 }
-#footer .social i.fa:hover {
+#footer .social i:hover {
 	color: #eee;
 }
 #footer p {
   font-size: 15px;
   color: #777777;
+}
+
+
+.btn-custom {
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 0 0 3px #859c3c;
+	background-color: #008001;
+	border: 0;
+	padding: 14px 20px;
+	margin: 0;
+	font-size: 17px;
+	border-radius: 12px 0 12px 0;
+	margin-top: 20px;
+	transition: all 0.5s;
+}
+.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
+	border: 1px solid #008001;
+	background: transparent;
+	color: #008001;
 }

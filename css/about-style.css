@@ -27,7 +27,7 @@ body{
   .navbar-nav a {
 	text-transform: uppercase;
 	font-weight: bold;
-	  color:#008001;
+	color:#008001;
 	padding: 20px;
   }
 /* Text selection background-color */
@@ -198,17 +198,16 @@ body{
 	display: inline-block;
 	margin: 0 20px;
 }
-#footer .social i.fa {
+#footer .social i {
 	font-size: 26px;
 	padding: 4px;
 	color: #008001;
 	transition: all 0.3s;
 }
-#footer .social i.fa:hover {
+#footer .social i:hover {
 	color: #eee;
 }
 #footer p {
   font-size: 15px;
   color: #777777;
 }
-/*Made by ROS*/
